@@ -11,7 +11,7 @@ app.use(cors({
     credentials: true
 }))
 
-//middleware, that parses incoming JSON requests, making the data accessible via req.body. The limit: "16kb" option restricts the maximum size of the JSON payload to 16 kilobytes, protecting your appl from  (DoS) 
+//middleware, that parses incoming JSON requests, making the data accessible via req.body. The limit: "16kb" option restricts the maximum size of the JSON payload to 16 kilobytes, protecting your appl from  (DoS)    
 app.use(express.json({limit: "16kb"}))
 app.use(express.urlencoded({extended: true, limit: "16kb"}))
 app.use(express.static("public")) 
